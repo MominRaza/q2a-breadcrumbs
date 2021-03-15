@@ -215,8 +215,7 @@
                 $breadcrumb_elem->is_last_elem = true;
             }
             
-            $this->pos_elem++;
-            $args['pos'] =  $this->pos_elem;
+            $breadcrumb_elem->pos_elem++;
 
             $this->themeobject->output( $breadcrumb_elem->get() );
         }
