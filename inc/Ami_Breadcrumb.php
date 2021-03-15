@@ -446,7 +446,7 @@
             $this->generate_breadcrumb_element( $args );
 
             $args = array(
-                'url'  => qa_path_absolute( implode( array_slice( qa_request_parts(), 0, 2 ), '/' ) ),
+                'url'  => qa_path_absolute( '/', implode( array_slice( qa_request_parts(), 0, 2 ) ) ),
                 'text' => qa_request_part( 1 ),
                 'type' => $this->template,
             );
