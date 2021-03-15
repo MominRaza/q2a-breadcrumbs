@@ -47,13 +47,14 @@
         public function _init()
         {
             $this->_data = array(
-                'breadcrumb_structure'        => '<li {{class}} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" ><a href="{{url}}" itemprop="item" > <span itemprop="name"> {{text}} </span></a><meta itemprop="position" content="1" /></li>',
+                'breadcrumb_structure'        => '<li {{class}} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" ><a href="{{url}}" itemprop="item" > <span itemprop="name"> {{text}} </span></a><meta itemprop="position" content="{{pos}}" /></li>',
                 'breadcrumb_structure_nolink' => '<li {{class}} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" ><span itemprop="name"> {{text}} </span></li>',
                 'type'                        => null,
                 'text'                        => null,
                 'url'                         => null,
                 'class'                       => null,
                 'is_last_elem'                => false,
+                'pos'                         => 1,
             );
 
             return $this;
