@@ -48,7 +48,7 @@
         {
             $this->_data = array(
                 'breadcrumb_structure'        => '<li {{class}} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" ><a href="{{url}}" itemprop="item" > <span itemprop="name"> {{text}} </span></a><meta itemprop="position" content="{{pos_elem}}" /></li>',
-                'breadcrumb_structure_nolink' => '<li {{class}} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" ><span itemprop="name"> {{text}} </span></li>',
+                'breadcrumb_structure_nolink' => '<li {{class}} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" ><span itemprop="name"> {{text}} </span><meta itemprop="position" content="{{pos_elem}}" /></li>',
                 'type'                        => null,
                 'text'                        => null,
                 'url'                         => null,
