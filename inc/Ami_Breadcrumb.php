@@ -215,8 +215,6 @@
                 $breadcrumb_elem->is_last_elem = true;
             }
             
-            $breadcrumb_elem->pos_elem++;
-
             $this->themeobject->output( $breadcrumb_elem->get() );
         }
 
