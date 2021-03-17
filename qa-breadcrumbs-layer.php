@@ -52,7 +52,7 @@
         {
             qa_html_theme_base::head_css();
             if ( $this->template != 'admin' ) {
-                $breadcrumb_css_url = $this->get_css_file_for_theme( qa_opt( 'site_theme' ), qa_path_to_root() . 'qa-plugin/' . AMI_BREADCRUMBS_FOLDER . '/css/' );
+                $breadcrumb_css_url = $this->get_css_file_for_theme( qa_get_site_theme(), qa_path_to_root() . 'qa-plugin/' . AMI_BREADCRUMBS_FOLDER . '/css/' );
                 $this->output( '<link rel="stylesheet" TYPE="text/css" href="' . $breadcrumb_css_url . '"/>' );
             }
         }
@@ -85,10 +85,8 @@
             return array(
                 'snowflat' => 'SnowFlat.css',
                 'donut'    => 'donut.css',
+                'mayropro' => 'MayroPro.css',
                 'default'  => 'default.css',
             );
         }
     }
-
-
-	
