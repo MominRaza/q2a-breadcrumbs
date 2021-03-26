@@ -1,3 +1,6 @@
+.qa-template-qa .breadcrumb-wrapper {
+  display: none;
+}
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 10px;
