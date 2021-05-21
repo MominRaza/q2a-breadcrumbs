@@ -67,11 +67,13 @@
         private function get_css_file_for_theme( $theme_name, $css_base_dir = null )
         {
             $mapper = $this->css_files_mapper();
-
-            $css_file = array_key_exists( strtolower( $theme_name ), $mapper )
-                            ? $mapper[ strtolower( $theme_name ) ]
-                            : $mapper['default'];
-
+            $keys = array_keys($mapper);
+            $css_file = $mapper['default'];
+            foreach ($keys as $key) {
+                if (false !== strpos(strtolower( $theme_name ), $key)) {
+                    $css_file = $mapper[$key];  
+                }
+            }
             return is_null( $css_base_dir ) ? $css_file : $css_base_dir . $css_file ;
         }
 

@@ -2,32 +2,28 @@
   display: none;
 }
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 8px var(--padding-lr);
   margin-bottom: 10px;
   margin-top: 0px;
   list-style: none;
   background-color: var(--surface);
-  border-radius: 4px;
+  border-radius: var(--border);
   display: block;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
 .breadcrumb > li {
   display: inline-block;
 }
-
 .breadcrumb > li + li:before {
   padding: 0 0 0 5px;
   font-weight: bolder;
   content: "/\00a0";
   opacity: 0.65;
 }
-
 .breadcrumb > .active {
   color: #777;
 }
-
 .breadcrumb > li > a,
 .breadcrumb > li i,
 .breadcrumb > li span {
@@ -36,32 +32,21 @@
   font-weight: 600;
   cursor: pointer;
 }
-
 .breadcrumb > li > a:hover {
   text-decoration: none;
 }
-
 .breadcrumb > .active > a {
   color: #999;
 }
-
 .breadcrumb > li:last-child > a,
 .breadcrumb > li:last-child i,
 .breadcrumb > li:last-child span {
   opacity: 0.65;
 }
-
 .qa-widget-full.qa-widget-full-high {
   margin-top: 0px;
 }
-
 .breadcrumb > li i,
 .breadcrumb > li:last-child i {
   font-weight: normal;
-}
-@media (max-width: 767px) {
-  .breadcrumb {
-    border-radius: unset;
-    box-shadow: unset;
-  }
 }
